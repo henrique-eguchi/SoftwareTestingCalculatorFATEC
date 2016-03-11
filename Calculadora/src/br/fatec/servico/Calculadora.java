@@ -9,7 +9,8 @@ public class Calculadora {
 		
 		for(String numero : vetorDeNumeros)
 		{
-			resultado += Integer.parseInt(numero);
+			if (!numero.trim().isEmpty())
+				resultado += Integer.parseInt(numero);
 		}
 		
 		return resultado;
